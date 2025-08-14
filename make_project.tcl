@@ -6,6 +6,6 @@
 #
 # Make sure the script is executed from redpitaya_synth/ folder
 
-set project_name "red_pitaya_synth"
+set project_name "audio_synth"
 
 source projects/$project_name/block_design.tcl
