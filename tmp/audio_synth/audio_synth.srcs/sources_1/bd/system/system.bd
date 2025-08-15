@@ -550,22 +550,25 @@
             "value": "80.0"
           },
           "CLKOUT1_JITTER": {
-            "value": "104.759"
+            "value": "310.772"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "96.948"
+            "value": "236.795"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "250"
+            "value": "15"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "8.000"
+            "value": "40.125"
           },
           "MMCM_CLKIN1_PERIOD": {
             "value": "8.000"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "4.000"
+            "value": "66.875"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "5"
           },
           "PRIM_IN_FREQ": {
             "value": "125.000"

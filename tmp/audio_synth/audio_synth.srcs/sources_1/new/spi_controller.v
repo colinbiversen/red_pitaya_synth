@@ -35,11 +35,4 @@ module spi_controller(
 // locked - clk_wiz has not stabilized, locked = 0
 // idle - clock is stabilized but not in a SPI frame
 // communicating - clock is stabilized and within a spi frame
-
-
-
-
-
-always
-    
 endmodule
