@@ -30,6 +30,58 @@ module spi_controller(
     output reg start,
     output reg rstn
     );
+    
+localparam [1:0]
+    startup = 2'b00,
+    idle = 2'b01,
+    com = 2'b10;
+    
+reg [1:0] state;
+reg [1:0] state_next;
+    
+always @(*)
+begin
+    case (state)
+    
+        default: state_next = startup;
+        
+        startup:
+        begin
+            if (locked)
+            begin
+                state_next = idle;
+            end
+            else
+            begin
+                state_next = startup;
+            end
+        end
+            
+        idle:
+        begin
+            if (busy)
+            begin
+                state_next = com;
+            end
+            else
+            begin
+                state_next = state;
+            end
+        end
+        
+        com:
+        begin
+            if (!busy)
+            begin
+                state_next = idle;
+            end
+            else
+                state_next = state;
+            
+        end
+    endcase
+end
+    
 
 // three states
 // locked - clk_wiz has not stabilized, locked = 0

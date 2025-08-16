@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x91950202854FDF8F",
+      "boundary_crc": "0x91950202A28B4517",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../audio_synth.gen/sources_1/bd/system",
       "name": "system",
@@ -534,6 +534,11 @@
           "data_out": {
             "direction": "O",
             "left": "31",
+            "right": "0"
+          },
+          "cntr_out": {
+            "direction": "O",
+            "left": "5",
             "right": "0"
           }
         }

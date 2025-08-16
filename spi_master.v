@@ -47,8 +47,8 @@ module spi_master(
     input  wire        miso,        // Data from slave
     //output reg         mosi,
 
-    output reg [31:0]  data_out    // Final received data
-    //output reg [5:0]   cntr_out
+    output reg [31:0]  data_out,    // Final received data
+    output reg [5:0]   cntr_out
 );
 // FSM with 5 states, one-hot encoding
 // S0 = Idle : CSN high, no data
@@ -155,10 +155,10 @@ begin
     endcase
 end
 
-//always @(posedge clk)
-//begin
-//    cntr_out <= cntr;
-//end
+always @(posedge clk)
+begin
+    cntr_out <= cntr;
+end
 
 // synchronous reset output and state assignment
 always @(posedge clk) 

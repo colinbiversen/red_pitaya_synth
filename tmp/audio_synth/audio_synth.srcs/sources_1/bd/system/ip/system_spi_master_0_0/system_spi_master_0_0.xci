@@ -51,7 +51,8 @@
         "sclk": [ { "direction": "out" } ],
         "csn": [ { "direction": "out" } ],
         "miso": [ { "direction": "in" } ],
-        "data_out": [ { "direction": "out", "size_left": "31", "size_right": "0" } ]
+        "data_out": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "cntr_out": [ { "direction": "out", "size_left": "5", "size_right": "0" } ]
       },
       "interfaces": {
         "rstn": {
