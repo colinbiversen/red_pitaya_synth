@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../audio_synth.ip_user_files/bd/system/ip/system_util_ds_buf_0_0/util_ds_buf.vhd" \
+"../../../../audio_synth.ip_user_files/bd/system/ip/system_util_ds_buf_0_0/sim/system_util_ds_buf_0_0.vhd" \
+"../../../../audio_synth.ip_user_files/bd/system/ip/system_util_ds_buf_1_0/util_ds_buf.vhd" \
+"../../../../audio_synth.ip_user_files/bd/system/ip/system_util_ds_buf_1_0/sim/system_util_ds_buf_1_0.vhd" \
+"../../../../audio_synth.ip_user_files/bd/system/ip/system_util_ds_buf_2_0/util_ds_buf.vhd" \
+"../../../../audio_synth.ip_user_files/bd/system/ip/system_util_ds_buf_2_0/sim/system_util_ds_buf_2_0.vhd" \
+"../../../../audio_synth.ip_user_files/bd/system/ip/system_proc_sys_reset_0_0/sim/system_proc_sys_reset_0_0.vhd" \
+
+# Do not sort compile order
+nosort

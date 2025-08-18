@@ -1,13 +1,14 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x91950202A28B4517",
+      "boundary_crc": "0xFD95B3035766E822",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../audio_synth.gen/sources_1/bd/system",
       "name": "system",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2025.1"
+      "tool_version": "2025.1",
+      "validated": "true"
     },
     "design_tree": {
       "util_ds_buf_0": "",
@@ -19,8 +20,7 @@
       "PS7": {
         "processing_system7_0": "",
         "proc_sys_reset_0": ""
-      },
-      "spi_master_0": ""
+      }
     },
     "interface_ports": {
       "Vp_Vn": {
@@ -141,27 +141,39 @@
           },
           "BA": {
             "physical_name": "DDR_ba",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "2",
+            "right": "0"
           },
           "ADDR": {
             "physical_name": "DDR_addr",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "14",
+            "right": "0"
           },
           "DM": {
             "physical_name": "DDR_dm",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
           },
           "DQ": {
             "physical_name": "DDR_dq",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "31",
+            "right": "0"
           },
           "DQS_N": {
             "physical_name": "DDR_dqs_n",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
           },
           "DQS_P": {
             "physical_name": "DDR_dqs_p",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "3",
+            "right": "0"
           }
         }
       },
@@ -178,7 +190,9 @@
         "port_maps": {
           "MIO": {
             "physical_name": "FIXED_IO_mio",
-            "direction": "IO"
+            "direction": "IO",
+            "left": "53",
+            "right": "0"
           },
           "DDR_VRN": {
             "physical_name": "FIXED_IO_ddr_vrn",
@@ -235,10 +249,30 @@
         "right": "0"
       },
       "dac_clk_o": {
-        "direction": "O"
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "system_axis_red_pitaya_dac_0_0_dac_clk",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default_prop"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default_prop"
+          }
+        }
       },
       "dac_rst_o": {
-        "direction": "O"
+        "direction": "O",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default_prop"
+          }
+        }
       },
       "dac_sel_o": {
         "direction": "O"
@@ -264,12 +298,40 @@
       "daisy_p_o": {
         "direction": "O",
         "left": "1",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "system_util_ds_buf_1_0_IBUF_OUT",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "ip_prop"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
       },
       "daisy_n_o": {
         "direction": "O",
         "left": "1",
-        "right": "0"
+        "right": "0",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "system_util_ds_buf_1_0_IBUF_OUT",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "ip_prop"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
       },
       "daisy_p_i": {
         "direction": "I",
@@ -338,7 +400,7 @@
         "inst_hier_path": "axis_red_pitaya_dac_0",
         "has_run_ip_tcl": "true",
         "reference_info": {
-          "ref_type": "hdl",
+          "ref_type": "unknown",
           "ref_name": "axis_red_pitaya_dac",
           "boundary_crc": "0x0"
         },
@@ -348,6 +410,10 @@
             "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
             "vlnv": "xilinx.com:interface:axis_rtl:1.0",
             "parameters": {
+              "TDATA_NUM_BYTES": {
+                "value": "4",
+                "value_src": "auto"
+              },
               "TDEST_WIDTH": {
                 "value": "0",
                 "value_src": "constant"
@@ -375,6 +441,14 @@
               "HAS_TLAST": {
                 "value": "0",
                 "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "125000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "system_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
               }
             },
             "port_maps": {
@@ -403,12 +477,34 @@
               "ASSOCIATED_BUSIF": {
                 "value": "s_axis",
                 "value_src": "constant"
+              },
+              "FREQ_HZ": {
+                "value": "125000000",
+                "value_src": "user_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "system_processing_system7_0_0_FCLK_CLK0",
+                "value_src": "default_prop"
               }
             }
           },
           "ddr_clk": {
             "type": "clk",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "250000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_250MHz_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
           },
           "locked": {
             "direction": "I"
@@ -2184,69 +2280,6 @@
               "processing_system7_0/FCLK_RESET0_N",
               "proc_sys_reset_0/ext_reset_in"
             ]
-          }
-        }
-      },
-      "spi_master_0": {
-        "vlnv": "xilinx.com:module_ref:spi_master:1.0",
-        "ip_revision": "1",
-        "xci_name": "system_spi_master_0_2",
-        "xci_path": "ip\\system_spi_master_0_2\\system_spi_master_0_2.xci",
-        "inst_hier_path": "spi_master_0",
-        "has_run_ip_tcl": "true",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "spi_master",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "rstn",
-                "value_src": "constant"
-              }
-            }
-          },
-          "rstn": {
-            "type": "rst",
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "constant"
-              }
-            }
-          },
-          "start": {
-            "direction": "I"
-          },
-          "busy": {
-            "direction": "O"
-          },
-          "done": {
-            "direction": "O"
-          },
-          "sclk": {
-            "direction": "O"
-          },
-          "csn": {
-            "direction": "O"
-          },
-          "miso": {
-            "direction": "I"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          },
-          "cntr_out": {
-            "direction": "O",
-            "left": "5",
-            "right": "0"
           }
         }
       }

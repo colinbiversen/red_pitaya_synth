@@ -1,2 +1,25 @@
 Time resolution is 1 ps
-SPI Output Data = a5a55a5a
+=== SPI Controller Testbench Starting ===
+Time 200000: Test 1 - Startup state
+PASS: Startup state correct
+Time 200000: Test 2 - Transition to IDLE
+PASS: Idle state correct
+Time 350000: Test 3 - First COM transition and start pulse
+=== SPI Controller Testbench Starting ===
+Time 200000: Test 1 - Startup state
+PASS: Startup state correct
+Time 200000: Test 2 - Transition to IDLE
+PASS: Idle state correct
+Time 350000: Test 3 - First COM transition and start pulse
+ERROR: COM state setup incorrect!
+ERROR: Start pulse missing!
+Time 34424000: Test 4 - Test locked signal loss
+ERROR: Should return to startup when locked goes low!
+
+=== TEST SUMMARY ===
+Total tests: 4
+Errors: 3
+SOME TESTS FAILED!
+$finish called at time : 34790290 ps : File "C:/GitHub/red_pitaya_synth/tmp/audio_synth/audio_synth.srcs/sim_1/new/spi_controller_testbench.v" Line 115
+ERROR: Testbench timeout!
+$finish called at time : 100 us : File "C:/GitHub/red_pitaya_synth/tmp/audio_synth/audio_synth.srcs/sim_1/new/spi_controller_testbench.v" Line 134

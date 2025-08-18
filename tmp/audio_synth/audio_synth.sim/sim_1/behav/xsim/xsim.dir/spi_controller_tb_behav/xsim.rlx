@@ -1,0 +1,12 @@
+
+{ 
+    crc :  11741291488047428944  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_21 -L processing_system7_vip_v1_0_23 -L proc_sys_reset_v5_0_17 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot spi_controller_tb_behav xil_defaultlib.spi_controller_tb xil_defaultlib.glbl" , 
+    buildDate : "May 22 2025" , 
+    buildTime : "00:13:55" , 
+    linkCmd : "C:\\Xilinx\\2025.1\\Vivado\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/spi_controller_tb_behav/xsimk.exe\"   \"xsim.dir/spi_controller_tb_behav/obj/xsim_0.win64.obj\" \"xsim.dir/spi_controller_tb_behav/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\2025.1\\Vivado\\lib\\win64.o\" -lxv_simulator_kernel   -lxv_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

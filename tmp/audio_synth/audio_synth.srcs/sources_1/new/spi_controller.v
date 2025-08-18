@@ -39,12 +39,7 @@ localparam [1:0]
     startup = 2'b00,
     idle = 2'b01,
     com = 2'b10;
-    
-always @(posedge clk_in)
-begin
-    state <= state_next;
-end
-    
+
 // default in startup:
 // signals in startup: rstn == 0 , start == 0, clk_out == 0
 //
@@ -53,11 +48,37 @@ end
 //
 // enter com if cntr == 1024:
 // signals in com: rstn = 1, start is pulsed for 1 clock cyle (clk_cntr == 1024), clk_out == clk_in
+//
+// enter idle again if locked == 1 and clk_cntr exceeds 2047
+// 
 
+// take care of state transitions on clock edge and counter increment
+always @(posedge clk_in)
+begin
+    state <= state_next;
+    
+    if (state_next == startup) begin
+        clk_cntr <= 0;  // Reset when entering startup
+    end
+    else if (state_next == idle && state == com) begin
+        clk_cntr <= 0;  // Reset when transitioning COM → IDLE  
+    end
+    else if ((state == idle) || (state == com)) begin
+        clk_cntr <= clk_cntr + 1;
+    end
+
+end
+    
+    
 always @(posedge clk_in)
 begin
     case (state)
-        default: clk_cntr <= 0;
+        default:
+        begin
+            rstn <= 0;
+            start <= 0;
+            clk_out <= 0;
+        end
         startup:
         begin
             rstn <= 0;
@@ -74,8 +95,13 @@ begin
         begin
             rstn <= 1;
             clk_out <= clk_in;
-            
-        
+            if (clk_cntr == 1024) begin
+                start <= 1;
+            end
+            else begin
+                start <= 0;
+            end
+        end
     endcase
 end
 
@@ -91,10 +117,13 @@ begin
             else begin
                 state_next = state;
             end
-        end
+        end 
         idle:
         begin
-            if (clk_cntr < 1024) begin
+            if (!locked) begin
+                state_next = startup;
+            end
+            else if (clk_cntr < 1024) begin
                 state_next = state;
             end
             else if (clk_cntr == 1024) begin
@@ -103,7 +132,10 @@ begin
         end
         com:
         begin
-            if (clk_cntr < 2047) begin
+            if (!locked) begin
+                state_next = startup;
+            end
+            else if (clk_cntr < 2047) begin
                 state_next = state;
             end
             else if (clk_cntr == 2047) begin
@@ -112,11 +144,4 @@ begin
         end
     endcase 
 end
-
-        
-
-end
-    
-
-
 endmodule
