@@ -15,12 +15,12 @@
       "util_ds_buf_2": "",
       "axis_red_pitaya_dac_0": "",
       "clk_wiz_250MHz": "",
-      "spi_master_0": "",
-      "clk_wiz_15MHz": "",
+      "clk_wiz_30MHz": "",
       "PS7": {
         "processing_system7_0": "",
         "proc_sys_reset_0": ""
-      }
+      },
+      "spi_master_0": ""
     },
     "interface_ports": {
       "Vp_Vn": {
@@ -477,100 +477,34 @@
           }
         }
       },
-      "spi_master_0": {
-        "vlnv": "xilinx.com:module_ref:spi_master:1.0",
-        "ip_revision": "1",
-        "xci_name": "system_spi_master_0_0",
-        "xci_path": "ip\\system_spi_master_0_0\\system_spi_master_0_0.xci",
-        "inst_hier_path": "spi_master_0",
-        "has_run_ip_tcl": "true",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "spi_master",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "locked": {
-            "direction": "I"
-          },
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "rstn",
-                "value_src": "constant"
-              }
-            }
-          },
-          "rstn": {
-            "type": "rst",
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_LOW",
-                "value_src": "constant"
-              }
-            }
-          },
-          "start": {
-            "direction": "I"
-          },
-          "busy": {
-            "direction": "O"
-          },
-          "done": {
-            "direction": "O"
-          },
-          "sclk": {
-            "direction": "O"
-          },
-          "csn": {
-            "direction": "O"
-          },
-          "miso": {
-            "direction": "I"
-          },
-          "data_out": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
-          },
-          "cntr_out": {
-            "direction": "O",
-            "left": "5",
-            "right": "0"
-          }
-        }
-      },
-      "clk_wiz_15MHz": {
+      "clk_wiz_30MHz": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
         "ip_revision": "16",
         "xci_name": "system_clk_wiz_0_1",
         "xci_path": "ip\\system_clk_wiz_0_1\\system_clk_wiz_0_1.xci",
-        "inst_hier_path": "clk_wiz_15MHz",
+        "inst_hier_path": "clk_wiz_30MHz",
         "has_run_ip_tcl": "true",
         "parameters": {
           "CLKIN1_JITTER_PS": {
             "value": "80.0"
           },
           "CLKOUT1_JITTER": {
-            "value": "310.772"
+            "value": "270.480"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "236.795"
+            "value": "234.843"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "15"
+            "value": "30"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "40.125"
+            "value": "39.750"
           },
           "MMCM_CLKIN1_PERIOD": {
             "value": "8.000"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "66.875"
+            "value": "33.125"
           },
           "MMCM_DIVCLK_DIVIDE": {
             "value": "5"
@@ -2252,6 +2186,69 @@
             ]
           }
         }
+      },
+      "spi_master_0": {
+        "vlnv": "xilinx.com:module_ref:spi_master:1.0",
+        "ip_revision": "1",
+        "xci_name": "system_spi_master_0_2",
+        "xci_path": "ip\\system_spi_master_0_2\\system_spi_master_0_2.xci",
+        "inst_hier_path": "spi_master_0",
+        "has_run_ip_tcl": "true",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi_master",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rstn",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rstn": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "start": {
+            "direction": "I"
+          },
+          "busy": {
+            "direction": "O"
+          },
+          "done": {
+            "direction": "O"
+          },
+          "sclk": {
+            "direction": "O"
+          },
+          "csn": {
+            "direction": "O"
+          },
+          "miso": {
+            "direction": "I"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "cntr_out": {
+            "direction": "O",
+            "left": "5",
+            "right": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2323,18 +2320,6 @@
           "axis_red_pitaya_dac_0/locked"
         ]
       },
-      "clk_wiz_15MHz_clk_out1": {
-        "ports": [
-          "clk_wiz_15MHz/clk_out1",
-          "spi_master_0/clk"
-        ]
-      },
-      "clk_wiz_15MHz_locked": {
-        "ports": [
-          "clk_wiz_15MHz/locked",
-          "spi_master_0/locked"
-        ]
-      },
       "daisy_n_i_1": {
         "ports": [
           "daisy_n_i",
@@ -2352,7 +2337,7 @@
           "PS7/FCLK_CLK0",
           "axis_red_pitaya_dac_0/aclk",
           "clk_wiz_250MHz/clk_in1",
-          "clk_wiz_15MHz/clk_in1"
+          "clk_wiz_30MHz/clk_in1"
         ]
       },
       "util_ds_buf_1_IBUF_OUT": {

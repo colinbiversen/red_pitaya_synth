@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.89465",
-   "Default View_TopLeft":"55,786",
+   "Default View_ScaleFactor":"1.16629",
+   "Default View_TopLeft":"66,687",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
 #  -string -flagsOSRD
@@ -10,57 +10,55 @@ preplace port Vaux0 -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
 preplace port Vaux1 -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
 preplace port Vaux9 -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
 preplace port Vaux8 -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
-preplace port DDR -pg 1 -lvl 3 -x 620 -y 490 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 3 -x 620 -y 620 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 3 -x 630 -y 490 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 3 -x 630 -y 620 -defaultsOSRD
 preplace port port-id_adc_clk_p_i -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
 preplace port port-id_adc_clk_n_i -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
-preplace port port-id_adc_enc_p_o -pg 1 -lvl 3 -x 620 -y 260 -defaultsOSRD
-preplace port port-id_adc_enc_n_o -pg 1 -lvl 3 -x 620 -y 230 -defaultsOSRD
-preplace port port-id_adc_csn_o -pg 1 -lvl 3 -x 620 -y 200 -defaultsOSRD
-preplace port port-id_dac_clk_o -pg 1 -lvl 3 -x 620 -y 1030 -defaultsOSRD
-preplace port port-id_dac_rst_o -pg 1 -lvl 3 -x 620 -y 1000 -defaultsOSRD
-preplace port port-id_dac_sel_o -pg 1 -lvl 3 -x 620 -y 970 -defaultsOSRD
-preplace port port-id_dac_wrt_o -pg 1 -lvl 3 -x 620 -y 1090 -defaultsOSRD
+preplace port port-id_adc_enc_p_o -pg 1 -lvl 3 -x 630 -y 260 -defaultsOSRD
+preplace port port-id_adc_enc_n_o -pg 1 -lvl 3 -x 630 -y 230 -defaultsOSRD
+preplace port port-id_adc_csn_o -pg 1 -lvl 3 -x 630 -y 200 -defaultsOSRD
+preplace port port-id_dac_clk_o -pg 1 -lvl 3 -x 630 -y 1030 -defaultsOSRD
+preplace port port-id_dac_rst_o -pg 1 -lvl 3 -x 630 -y 1000 -defaultsOSRD
+preplace port port-id_dac_sel_o -pg 1 -lvl 3 -x 630 -y 970 -defaultsOSRD
+preplace port port-id_dac_wrt_o -pg 1 -lvl 3 -x 630 -y 1090 -defaultsOSRD
 preplace portBus adc_dat_a_i -pg 1 -lvl 0 -x 0 -y 170 -defaultsOSRD
 preplace portBus adc_dat_b_i -pg 1 -lvl 0 -x 0 -y 280 -defaultsOSRD
-preplace portBus dac_dat_o -pg 1 -lvl 3 -x 620 -y 1120 -defaultsOSRD
-preplace portBus dac_pwm_o -pg 1 -lvl 3 -x 620 -y 20 -defaultsOSRD
-preplace portBus exp_p_tri_io -pg 1 -lvl 3 -x 620 -y 140 -defaultsOSRD
-preplace portBus exp_n_tri_io -pg 1 -lvl 3 -x 620 -y 50 -defaultsOSRD
-preplace portBus daisy_p_o -pg 1 -lvl 3 -x 620 -y 110 -defaultsOSRD
-preplace portBus daisy_n_o -pg 1 -lvl 3 -x 620 -y 80 -defaultsOSRD
+preplace portBus dac_dat_o -pg 1 -lvl 3 -x 630 -y 1120 -defaultsOSRD
+preplace portBus dac_pwm_o -pg 1 -lvl 3 -x 630 -y 20 -defaultsOSRD
+preplace portBus exp_p_tri_io -pg 1 -lvl 3 -x 630 -y 140 -defaultsOSRD
+preplace portBus exp_n_tri_io -pg 1 -lvl 3 -x 630 -y 50 -defaultsOSRD
+preplace portBus daisy_p_o -pg 1 -lvl 3 -x 630 -y 110 -defaultsOSRD
+preplace portBus daisy_n_o -pg 1 -lvl 3 -x 630 -y 80 -defaultsOSRD
 preplace portBus daisy_p_i -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
 preplace portBus daisy_n_i -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
-preplace portBus led_o -pg 1 -lvl 3 -x 620 -y 170 -defaultsOSRD
+preplace portBus led_o -pg 1 -lvl 3 -x 630 -y 170 -defaultsOSRD
 preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 170 -y 360 -defaultsOSRD
 preplace inst util_ds_buf_1 -pg 1 -lvl 1 -x 170 -y 220 -defaultsOSRD
 preplace inst util_ds_buf_2 -pg 1 -lvl 1 -x 170 -y 80 -defaultsOSRD
-preplace inst axis_red_pitaya_dac_0 -pg 1 -lvl 2 -x 460 -y 1080 -defaultsOSRD
+preplace inst axis_red_pitaya_dac_0 -pg 1 -lvl 2 -x 460 -y 1090 -defaultsOSRD
 preplace inst clk_wiz_250MHz -pg 1 -lvl 1 -x 170 -y 1090 -defaultsOSRD
-preplace inst spi_master_0 -pg 1 -lvl 2 -x 460 -y 890 -defaultsOSRD
-preplace inst clk_wiz_15MHz -pg 1 -lvl 1 -x 170 -y 880 -defaultsOSRD
+preplace inst clk_wiz_30MHz -pg 1 -lvl 1 -x 170 -y 880 -defaultsOSRD
 preplace inst PS7 -pg 1 -lvl 1 -x 170 -y 620 -defaultsOSRD -resize 213 348
+preplace inst spi_master_0 -pg 1 -lvl 2 -x 460 -y 860 -defaultsOSRD
 preplace netloc adc_clk_n_i_1 1 0 1 20J 350n
 preplace netloc adc_clk_p_i_1 1 0 1 NJ 380
 preplace netloc axis_red_pitaya_dac_0_dac_clk 1 2 1 600 1030n
-preplace netloc axis_red_pitaya_dac_0_dac_dat 1 2 1 N 1120
+preplace netloc axis_red_pitaya_dac_0_dac_dat 1 2 1 580 1120n
 preplace netloc axis_red_pitaya_dac_0_dac_rst 1 2 1 590 1000n
 preplace netloc axis_red_pitaya_dac_0_dac_sel 1 2 1 580 970n
 preplace netloc axis_red_pitaya_dac_0_dac_wrt 1 2 1 600 1090n
 preplace netloc clk_wiz_0_clk_out1 1 1 1 320 1080n
 preplace netloc clk_wiz_0_locked 1 1 1 310 1100n
-preplace netloc clk_wiz_15MHz_clk_out1 1 1 1 NJ 870
-preplace netloc clk_wiz_15MHz_locked 1 1 1 310 850n
 preplace netloc daisy_n_i_1 1 0 1 NJ 220
 preplace netloc daisy_p_i_1 1 0 1 20J 240n
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 30 950 320
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 2 30 950 330
 preplace netloc util_ds_buf_1_IBUF_OUT 1 0 2 30 810 310
 preplace netloc util_ds_buf_2_OBUF_DS_N 1 1 2 N 80 N
-preplace netloc util_ds_buf_2_OBUF_DS_P 1 1 2 310 110 N
+preplace netloc util_ds_buf_2_OBUF_DS_P 1 1 2 330 110 N
 preplace netloc PS7_DDR 1 1 2 NJ 490 N
 preplace netloc PS7_FIXED_IO 1 1 2 NJ 620 N
-levelinfo -pg 1 0 170 460 620
-pagesize -pg 1 -db -bbox -sgen -180 0 800 1180
+levelinfo -pg 1 0 170 460 630
+pagesize -pg 1 -db -bbox -sgen -180 0 810 1190
 "
 }
 {

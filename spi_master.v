@@ -35,7 +35,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module spi_master(
-    input  wire        locked,
     input  wire        clk,         // System clock, divided to 3.9 MHz
     input  wire        rstn,         // Synchronous reset
     input  wire        start,       // Start capture

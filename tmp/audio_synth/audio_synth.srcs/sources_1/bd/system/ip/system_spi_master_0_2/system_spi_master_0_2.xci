@@ -1,16 +1,16 @@
 {
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
-    "xci_name": "system_spi_master_0_0",
+    "xci_name": "system_spi_master_0_2",
     "cell_name": "spi_master_0",
     "component_reference": "xilinx.com:module_ref:spi_master:1.0",
     "ip_revision": "1",
-    "gen_directory": "../../../../../../audio_synth.gen/sources_1/bd/system/ip/system_spi_master_0_0",
+    "gen_directory": "../../../../../../audio_synth.gen/sources_1/bd/system/ip/system_spi_master_0_2",
     "parameters": {
       "component_parameters": {
         "data_length_d": [ { "value": "32", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "max_data_transfer_d": [ { "value": "16", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "Component_Name": [ { "value": "system_spi_master_0_0", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "system_spi_master_0_2", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
         "data_length_d": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -33,7 +33,7 @@
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
         "IPREVISION": [ { "value": "1" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../audio_synth.gen/sources_1/bd/system/ip/system_spi_master_0_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../audio_synth.gen/sources_1/bd/system/ip/system_spi_master_0_2" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2025.1" } ],
@@ -42,7 +42,6 @@
     },
     "boundary": {
       "ports": {
-        "locked": [ { "direction": "in" } ],
         "clk": [ { "direction": "in" } ],
         "rstn": [ { "direction": "in" } ],
         "start": [ { "direction": "in" } ],

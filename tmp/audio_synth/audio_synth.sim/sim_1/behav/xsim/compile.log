@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/GitHub/red_pitaya_synth/spi_master.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module spi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/GitHub/red_pitaya_synth/tmp/audio_synth/audio_synth.srcs/sim_1/new/spi_master_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_spi_master
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/GitHub/red_pitaya_synth/tmp/audio_synth/audio_synth.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,7 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/GitHub/red_pitaya_synth/spi_master.v,1755366949,verilog,,C:/GitHub/red_pitaya_synth/tmp/audio_synth/audio_synth.srcs/sim_1/new/spi_master_testbench.v,,spi_master,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/GitHub/red_pitaya_synth/tmp/audio_synth/audio_synth.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+C:/GitHub/red_pitaya_synth/tmp/audio_synth/audio_synth.srcs/sim_1/new/spi_master_testbench.v,1755366677,verilog,,,,tb_spi_master,,,../../../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
